@@ -3,10 +3,10 @@ import pandas as pd
 import joblib
 
 # Load model pipeline
-model = joblib.load('raw_car_data/Registered/car_price_model.pkl')
+model = joblib.load('car_price_model.pkl')
 
 # Load dataset to get unique model names
-df = pd.read_csv('raw_car_data/Registered/sub_dataset.csv')
+df = pd.read_csv('sub_dataset.csv')
 models_list = sorted(df['Model'].dropna().unique())
 manufacturers_list = sorted(df['Manufacturer'].dropna().unique())
 stolen_options = ['Yes', 'No']

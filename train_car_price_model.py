@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import joblib
 
 # Load dataset
-file_path = 'raw_car_data\Registered\sub_dataset.csv'
+file_path = 'sub_dataset.csv'
 df = pd.read_csv(file_path)
 
 # Check if all values in 'Price' column are numeric
