@@ -28,7 +28,8 @@ if st.button("Predict Price"):
         'Model Year': [model_year],
         'Mileage': [mileage],
         'Stolen': [stolen],
-        'Damage Severity': [damage_severity]
+        'Damage Severity': [damage_severity],
+        'Age': [2025 - model_year]  # Assuming current year is 2025
     })
 
     prediction = model.predict(input_df)[0]

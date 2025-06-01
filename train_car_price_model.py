@@ -28,8 +28,16 @@ if not non_numeric_prices.empty:
 else:
     print("All values in 'Price' column are numeric or convertible to numeric.")
 
+#Calculate 'Age' from 'Model Year'
+from datetime import datetime
+current_year = datetime.now().year
+df['Age'] = current_year - df['Model Year']
+df['Age'] = pd.to_numeric(df['Age'], errors='coerce')
+df = df.dropna(subset=['Age'])
+df['Age'] = df['Age'].astype(int)
+
 # Feature matrix and target vector
-X = df[['Model', 'Mileage', 'Manufacturer', 'Stolen', 'Model Year', 'Damage Severity']]
+X = df[['Model', 'Mileage', 'Manufacturer', 'Stolen', 'Model Year', 'Damage Severity', 'Age']]
 y = df['Price'].astype(float)  # Ensure y is float
 
 # Split data
@@ -37,7 +45,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
 # Define preprocessing and model pipeline
 categorical = ['Model', 'Manufacturer', 'Stolen', 'Damage Severity']
-numerical = ['Mileage', 'Model Year']
+numerical = ['Mileage', 'Model Year', 'Age']
 
 preprocessor = ColumnTransformer([
     ('cat', OneHotEncoder(handle_unknown='ignore'), categorical),
