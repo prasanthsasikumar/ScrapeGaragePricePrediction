@@ -102,6 +102,7 @@ Once uploaded, you will get the predicted prices for the cars.
 
 * This project uses data scraped from **Manheim NZ** ([https://www.manheim.co.nz/](https://www.manheim.co.nz/)).
 * The regression model was built using **scikit-learn**.
+* Tuned XGBoost is the current model selected.
 * The Streamlit app provides an easy way to interact with the model.
 
 ## Notes
