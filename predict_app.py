@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load model pipeline
-model = joblib.load('car_price_model.pkl')
+model = joblib.load('car_price_xgboost_tuned_model.pkl')
 
 # Load dataset to get unique model names
 df = pd.read_csv('sub_dataset.csv')
