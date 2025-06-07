@@ -116,7 +116,7 @@ Once uploaded, you will get the predicted prices for the cars.
 
 ## Contact
 
-If you buy and fix cars from repo or insurance auctions, feel free to **reach out**! I would love to chat about cars, auctions, or potential improvements to this project. You can contact me via \[email or LinkedIn(https://www.linkedin.com/in/prasanth-sasikumar/)].
+If you also into buying and fixing cars from repo or insurance auctions, feel free to **reach out**! I would love to chat about cars, auctions, or potential improvements to this project. Contact me via \[[email](prasanth@ahlab.org) or [LinkedIn](https://www.linkedin.com/in/prasanth-sasikumar/)].
 
 ---
 
