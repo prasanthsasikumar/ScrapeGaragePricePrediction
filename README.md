@@ -62,13 +62,14 @@ To run the code locally, you will need Python 3.7+ and the following libraries:
 3. To train the model, run the appropriate training script (e.g., located in `scripts/` or `src/models/`):
 
    ```bash
-   python scripts/train_model.py 
+   ScrapeGaragePricePrediction>python -m src.models.model_runner
+   or python scripts/train_model.py 
    ```
 
 4. To launch the Streamlit app for predictions (e.g., located in `src/app/` or `scripts/`):
 
    ```bash
-   streamlit run src/app/predict_app.py
+   streamlit run src/app/streamlit_car_price_prediction.py
    ```
 
    The app will be available at `http://localhost:8501` by default.
@@ -115,7 +116,7 @@ Once uploaded, you will get the predicted prices for the cars.
 
 ## Contact
 
-If you buy and fix cars from repo or insurance auctions, feel free to **reach out**! I would love to chat about cars, auctions, or potential improvements to this project. You can contact me via \[email or LinkedIn].
+If you buy and fix cars from repo or insurance auctions, feel free to **reach out**! I would love to chat about cars, auctions, or potential improvements to this project. You can contact me via \[email or LinkedIn(https://www.linkedin.com/in/prasanth-sasikumar/)].
 
 ---
 
