@@ -1,10 +1,16 @@
+# ScrapeGarage Price Prediction 🚗💰
+
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Online-green)](#demo)
+
 # Car Auction Price Prediction
 
-Welcome to the **Car Auction Price Prediction** repository! This project aims to estimate the price of cars based on auction data scraped from **Manheim NZ**. Using a simple regression model, we predict car prices based on several features like the car's **manufacturer**, **model**, **year**, **mileage**, **stolen status**, and **damage status**.
-
-The app is deployed using Streamlit and can be accessed via this link: [Car Auction Price Prediction App](https://nz-car-auction.streamlit.app/).
+Demo deployed can be accessed via : [Car Auction Price Prediction App](https://nz-car-auction.streamlit.app/).
 
 ## Overview
+
+ScrapeGarage Price Prediction is a machine learning project that predicts used car prices based on scraped data. It features a full data pipeline, model training, and a user-friendly Streamlit web app for real-time predictions.
 
 This is a continuation of the [ScrapeGarage project](https://github.com/prasanthsasikumar/ScrapeGarage), which collects car auction data from **Manheim NZ** every midnight. Over the course of two years, the dataset has grown to contain valuable information about cars, including their **make**, **model**, **year**, **mileage**, **stolen status**, **damage description**, and more.
 
@@ -16,6 +22,10 @@ The **trained model** uses this dataset to predict auction prices for **register
 * **Model Training**: The model is trained using historical auction data, with the main script likely located in `scripts/` or `src/models/` (e.g., `scripts/train_model.py`).
 * **Data Cleaning and Preprocessing**: The data is cleaned and preprocessed in Jupyter Notebooks located in the `notebooks/` folder (e.g., `notebooks/01_data_cleaning.ipynb`).
 * **Streamlit Interface**: A simple, user-friendly interface for making predictions, likely available in `src/app/predict_app.py` or `scripts/predict_app.py`.
+
+## Demo
+
+The demo showcases the model's ability to predict car auction prices based on various input features. Users can interact with the Streamlit app to input car details and receive instant price predictions.
 
 ## Dataset
 
@@ -127,4 +137,16 @@ If you also into buying and fixing cars from repo or insurance auctions, feel fr
 ### Screenshot
 
 ![Screenshot](https://github.com/prasanthsasikumar/car_aution_prediction/blob/main/Screenshot.png?raw=true)
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Testing](#testing)
+- [License](#license)
+- [Contact](#contact)
 
